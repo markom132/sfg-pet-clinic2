@@ -24,6 +24,7 @@ jobs:
             - ~/.m2/repository
 
       - run: mvn integration-test
+      - run: mvn clean install
   deploy:
     # This is an example deploy job, not actually used by the workflow
     docker:
